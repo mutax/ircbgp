@@ -19,9 +19,13 @@ lecture early.
 
 # Usage
 
-   screen ircbgpbot Florian 1 '#as1-as2'
-   screen ircbgpbot Claudia 2 '#as1-as2,#as2-as3'
-   screen ircbgpbot Tobias  3 '#as2-as3'
+Use screen to start multiple bots in parallel or use separate terminals:
+
+```
+   $ screen ircbgpbot Florian 1 '#as1-as2'
+   $ screen ircbgpbot Claudia 2 '#as1-as2,#as2-as3'
+   $ screen ircbgpbot Tobias  3 '#as2-as3'
+```
 
 This would start three bots connecting to a irc server running on localhost, names Florian, Claudia and Tobias.
 All three will start announcing their nickname and AS number (1-3) to the channels listed as last parameters.
